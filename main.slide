@@ -16,7 +16,10 @@ http://mhausenblas.info
 
 * Why Go?
 
+
 * Why Go?
+
+.background img/gopher_head.png
 
 - History
 - Language features
@@ -46,15 +49,51 @@ http://mhausenblas.info
 
 * Community
 
-* Community
+* Discussions
 
-ML, Slack, conferences
+.background img/community.png
+
+When you need help, want to ask or discuss something …
+
+.link https://groups.google.com/forum/#!forum/golang-nuts golang-nuts@googlegroups.com
+.link https://invite.slack.golangbridge.org/ gophers.slack.com
+.link https://www.reddit.com/r/golang/ /r/golang on Reddit
+.link http://stackoverflow.com/questions/tagged/go #go on StackOverflow
+
+* News
+
+.background img/community.png
+
+When you want to learn about new developments, exchange thoughts and meet other Gophers …
+
+.link https://www.youtube.com/user/gocoding Go channel on YouTube
+.link https://www.gophercon.com/ gophercon.com
+.link https://www.dotgo.eu/ dotgo.eu
+.link https://golangweekly.com/ golangweekly.com
+
 
 * Tooling
 
 * Tooling
 
-from build to linter to test/benchmarking
+From build to test:
+
+      build       compile packages and dependencies
+      clean       remove object files
+      doc         show documentation for package or symbol
+      env         print Go environment information
+      bug         start a bug report
+      fix         run go tool fix on packages
+      fmt         run gofmt on package sources
+      generate    generate Go files by processing source
+      get         download and install packages and dependencies
+      install     compile and install packages and dependencies
+      list        list packages
+      run         compile and run Go program
+      test        test packages
+      tool        run specified go tool
+      version     print Go version
+      vet         run go tool vet on packages
 
 * Walkthrough
 
