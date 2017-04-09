@@ -67,7 +67,7 @@ Local:
   $ git clone https://github.com/mhausenblas/letsgo && cd letsgo
   $ go run snippets/sXX/main.go
 
-_Note_: examples that only work in local mode are marked with *
+_Note_: examples that may only work in local mode are marked with *
 
 * Hello World!
 
@@ -76,6 +76,19 @@ _Note_: examples that only work in local mode are marked with *
 * A more realistic Hello World!*
 
 .play -numbers snippets/s01/main.go
+
+* Iterations and collections
+
+.play -numbers snippets/s02/main.go
+
+* Other
+
+- Struct types
+- Functions and methods
+- Error handling
+- Reading and writing files
+- HTTP service/JSON
+- Concurrency
 
 
 * Advanced stuff
