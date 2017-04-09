@@ -4,7 +4,9 @@
 
 Local:
 
-  $ present -play -notes
+```bash
+$ present -play -notes
+```
 
 Then go to http://127.0.0.1:3999/main.slide
 
