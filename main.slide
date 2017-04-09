@@ -1,0 +1,105 @@
+Let's Go!
+http://301.sh/letsgo
+18:00 11 Apr 2017
+Tags: Go, programming, tutorial
+
+Michael Hausenblas
+Developer Advocate, Red Hat
+http://mhausenblas.info
+@mhausenblas
+
+* Agenda
+
+- Why Go?
+- Walkthrough
+- Advanced stuff
+
+* Why Go?
+
+* Why Go?
+
+- History
+- Language features
+- Community
+- Tooling
+
+* History
+
+.code snippets/design_notes
+
+[[https://talks.golang.org/2015/gophercon-goevolution.slide][More …]]
+
+* History
+
+.image img/influences.png 500 _
+
+* Language features
+
+* Language features
+
+- Statically typed, compiled
+- Native binaries (Linux, macOS, Windows)
+- Garbage collected
+- Comprehensive standard lib
+- Concurrency a 1st-class citizen
+- No magic
+
+* Community
+
+* Community
+
+ML, Slack, conferences
+
+* Tooling
+
+* Tooling
+
+from build to linter to test/benchmarking
+
+* Walkthrough
+
+* Follow along
+
+Online: no set up required but limited
+
+Local:
+
+  $ git clone https://github.com/mhausenblas/letsgo && cd letsgo
+  $ go run snippets/sXX/main.go
+
+_Note_: examples that only work in local mode are marked with *
+
+* Hello World!
+
+.play -numbers snippets/s00/main.go
+
+* A more realistic Hello World!*
+
+.play -numbers snippets/s01/main.go
+
+
+* Advanced stuff
+
+* Development
+
+editor, IDE, containerize
+
+* Useful packages
+Sirupsen/logrus, Cobra/Viper
+
+* Case studies
+
+- Docker
+- Kubernetes
+- etcd
+
+* Best practices
+
+- [[https://golang.org/doc/effective_go.html][Effective Go]]
+- [[https://www.youtube.com/watch?v=PAAkCSZUG1c][Go Proverbs]]
+- [[https://www.youtube.com/watch?v=29LLRKIL_TI][7 common mistakes in Go and when to avoid them]]
+
+* Criticism
+
+- [[https://github.com/ksimka/go-is-not-good][ksimka/go-is-not-good]]
+- [[https://www.youtube.com/watch?v=gHCtEjzZ-rY][A Look at the Criticism of Go]]
