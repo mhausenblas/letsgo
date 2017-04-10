@@ -166,17 +166,23 @@ _Note_: examples that may only work in local mode are marked with *
 
 .play -numbers snippets/s08/main.go /BEGIN/,/END/
 
-* Files - Reading
+* Files - Reading*
 
 .play -numbers snippets/s09/main.go
 
 .link https://gobyexample.com/reading-files More …
 
-* Files - Writing
+* Files - Writing*
 
 .play -numbers snippets/s10/main.go /BEGIN/,/END/
 
 .link https://gobyexample.com/writing-files More …
+
+* Files - Advanced*
+
+.code -numbers snippets/s11/main.go /BEGIND/,/ENDD/
+.play -numbers snippets/s11/main.go /BEGINC/,/ENDC/
+
 
 * Other
 
