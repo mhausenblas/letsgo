@@ -45,7 +45,7 @@ http://mhausenblas.info
 - Statically typed, compiled
 - Native binaries (Linux, macOS, Windows)
 - Garbage collected
-- Comprehensive standard lib
+- Comprehensive [[https://golang.org/pkg/][standard lib]]
 - Concurrency a 1st-class citizen
 - No magic
 
@@ -72,7 +72,6 @@ When you want to learn about new developments, exchange thoughts and meet other 
 .link https://www.gophercon.com/ gophercon.com
 .link https://www.dotgo.eu/ dotgo.eu
 .link https://golangweekly.com/ golangweekly.com
-
 
 * Tooling
 
@@ -111,7 +110,6 @@ For libraries:
 
   $ go build
 
-
 * Walkthrough
 
 * Follow along
@@ -141,15 +139,24 @@ _Note_: examples that may only work in local mode are marked with *
 
 .play -numbers snippets/s03/main.go
 
+* Structs
+
+.code -numbers snippets/s04/main.go /BEGINS/,/ENDS/
+
+* Structs
+
+.play -numbers snippets/s04/main.go /BEGINC/,/ENDC/
+
+
 
 * Other
 
-- Struct types
 - Functions and methods
 - Error handling
 - Reading and writing files
 - HTTP service/JSON
 - Concurrency
+- Testing and benchmarking
 
 * Advanced stuff
 
