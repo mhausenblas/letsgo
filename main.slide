@@ -13,6 +13,8 @@ http://mhausenblas.info
 - Why Go?
 - Walkthrough
 - Advanced stuff
+- Gophers exchange
+- DIY
 
 * Why Go?
 
@@ -95,6 +97,21 @@ From build to test:
       version     print Go version
       vet         run go tool vet on packages
 
+* Tooling
+
+For simple, one-shot execution:
+
+  $ go run main.go
+
+For non-trivial, standalone programs:
+
+  $ go install
+
+For libraries:
+
+  $ go build
+
+
 * Walkthrough
 
 * Follow along
@@ -151,6 +168,9 @@ To use Go in/with Docker (and when not to):
 
 * Useful packages and tools
 
+to read/write YAML files:
+.link http://gopkg.in/yaml.v2 gopkg.in/yaml.v2
+
 to build proper CLI apps:
 .link https://github.com/spf13/cobra spf13/cobra
 
@@ -179,7 +199,6 @@ to access the GitHub API:
 
 More via [[https://github.com/avelino/awesome-go][awesome-go]] …
 
-
 * Case studies
 
 - [[https://github.com/containerd/containerd][containerd]]
@@ -195,6 +214,19 @@ More via [[https://github.com/avelino/awesome-go][awesome-go]] …
 - [[https://www.youtube.com/watch?v=29LLRKIL_TI][7 common mistakes in Go and when to avoid them]]
 - [[https://github.com/ksimka/go-is-not-good][ksimka/go-is-not-good]]
 - [[https://www.youtube.com/watch?v=gHCtEjzZ-rY][A Look at the Criticism of Go]]
+
+* Books
+
+.image img/tgpl.jpg 500 _
+
+.link https://www.amazon.com/Programming-Language-Addison-Wesley-Professional-Computing/dp/0134190440 Get it here …
+
+* Books
+
+.image img/gia.jpg 500 _
+
+.link https://www.manning.com/books/go-in-action Get it here …
+
 
 * Kudos
 
