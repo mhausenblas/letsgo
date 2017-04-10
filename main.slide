@@ -157,10 +157,17 @@ _Note_: examples that may only work in local mode are marked with *
 .code -numbers snippets/s06/main.go /BEGIND/,/ENDD/
 .play -numbers snippets/s06/main.go /BEGINC/,/ENDC/
 
+* Errors
+
+.code -numbers snippets/s07/main.go /BEGIND/,/ENDD/
+.play -numbers snippets/s07/main.go /BEGINC/,/ENDC/
+
+* Interfaces
+
+
 
 * Other
 
-- Error handling
 - Interfaces
 - Reading and writing files
 - HTTP service/JSON

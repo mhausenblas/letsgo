@@ -1,7 +1,6 @@
 package main
 
 import (
-	"errors"
 	"fmt"
 	"net/url"
 )
@@ -22,14 +21,14 @@ type Contributor struct {
 // BEGIND OMIT
 
 // Mailof returns the mail address of a project's contributor
-// when supplied with a valid user ID, otherwise an error.
-func (p Project) Mailof(uid int) (string, error) {
+// when supplied with a valid user ID.
+func (p Project) Mailof(uid int) string {
 	for _, contributor := range p.Contributors {
 		if contributor.ID == uid {
-			return contributor.Mail, nil
+			return contributor.Mail
 		}
 	}
-	return "", errors.New("No contributor found")
+	return ""
 }
 
 // ENDD OMIT
@@ -52,7 +51,7 @@ func main() {
 	}
 	// BEGINC OMIT
 	uid := 77
-	mail, _ := aproject.Mailof(uid)
+	mail := aproject.Mailof(uid)
 	fmt.Printf("Mail address of contributor with ID %d is:\n%s", uid, mail)
 	// ENDC OMIT
 }

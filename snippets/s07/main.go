@@ -1,8 +1,10 @@
 package main
 
 import (
+	"errors"
 	"fmt"
 	"net/url"
+	"os"
 )
 
 // Project defines a collaborative, time-bounded effort.
@@ -20,13 +22,13 @@ type Contributor struct {
 
 // BEGIND OMIT
 
-func mailof(uid int, p Project) string {
+func mailof(uid int, p Project) (string, error) {
 	for _, contributor := range p.Contributors {
 		if contributor.ID == uid {
-			return contributor.Mail
+			return contributor.Mail, nil
 		}
 	}
-	return ""
+	return "", errors.New("No contributor found")
 }
 
 // ENDD OMIT
@@ -48,8 +50,12 @@ func main() {
 		},
 	}
 	// BEGINC OMIT
-	uid := 29
-	mail := mailof(uid, aproject)
+	uid := 1
+	mail, err := mailof(uid, aproject)
+	if err != nil {
+		fmt.Println(err)
+		os.Exit(1)
+	}
 	fmt.Printf("Mail address of contributor with ID %d is:\n%s", uid, mail)
 	// ENDC OMIT
 }
