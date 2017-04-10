@@ -184,11 +184,26 @@ _Note_: examples that may only work in local mode are marked with *
 .play -numbers snippets/s11/main.go /BEGINC/,/ENDC/
 
 
-* Other
+* Simple service with a HTTP API*
 
-- HTTP service/JSON
-- Concurrency
-- Testing and benchmarking
+.code -numbers snippets/s12/main.go
+
+* Simple service with a HTTP API*
+
+In one terminal:
+
+  $ go run snippets/s12/main.go
+
+And in another session:
+
+  $ curl localhost:9876/data
+  {"title":"The Let's Go workshop","count":33}
+
+* Others
+
+- [[https://tour.golang.org/concurrency/1][Concurrency]]
+- [[https://gobyexample.com/time-formatting-parsing][Time Formatting/Parsing]]
+- [[https://github.com/golang/go/wiki/TableDrivenTests][Testing]]
 
 * Advanced stuff
 
