@@ -116,9 +116,14 @@ _Note_: examples that may only work in local mode are marked with *
 
 .play -numbers snippets/s01/main.go
 
-* Iterations and collections
+* Slices
 
 .play -numbers snippets/s02/main.go
+
+* Maps
+
+.play -numbers snippets/s03/main.go
+
 
 * Other
 
@@ -129,29 +134,76 @@ _Note_: examples that may only work in local mode are marked with *
 - HTTP service/JSON
 - Concurrency
 
-
 * Advanced stuff
 
 * Development
 
-editor, IDE, containerize
+Starting point: [[https://golang.org/doc/code.html][How to Write Go Code]]
 
-* Useful packages
-Sirupsen/logrus, Cobra/Viper
+To learn about commands, see [[https://golang.org/cmd/][Commands]]
+
+To learn about editor/IDE-specific support, check out the [[https://github.com/golang/go/wiki/IDEsAndTextEditorPlugins][Wiki]]
+
+To use Go in/with Docker (and when not to):
+
+- [[https://medium.com/statuscode/golang-docker-for-development-and-production-ce3ad4e69673][post]] on Medium
+- [[https://www.oreilly.com/ideas/should-you-containerize-your-go-code][article]] on O'Reilly Radar
+
+* Useful packages and tools
+
+to build proper CLI apps:
+.link https://github.com/spf13/cobra spf13/cobra
+
+to manage configurations:
+.link https://github.com/spf13/viper spf13/viper
+
+for structured logging:
+.link https://github.com/Sirupsen/logrus Sirupsen/logrus
+
+for cross-platform filesystem notifications:
+.link https://github.com/fsnotify/fsnotify fsnotify/fsnotify
+
+* Useful packages and tools
+
+to do advanced terminal output:
+.link https://github.com/buger/goterm buger/goterm
+
+to manage tabular output in terminal:
+.link https://github.com/olekukonko/tablewriter olekukonko/tablewriter
+
+to manage S3 (compatible) storage systems:
+.link https://github.com/minio/minio-go minio/minio-go
+
+to access the GitHub API:
+.link https://github.com/google/go-github google/go-github
+
+More via [[https://github.com/avelino/awesome-go][awesome-go]] …
+
 
 * Case studies
 
-- Docker
-- Kubernetes
-- etcd
+- [[https://github.com/containerd/containerd][containerd]]
+- [[https://github.com/coreos/etcd][etcd]]
+- [[https://github.com/hashicorp/consul][Consul]]
+- [[https://github.com/kubernetes/kubernetes][Kubernetes]]
 
-* Best practices
+* Best practices & criticism
 
 - [[https://golang.org/doc/effective_go.html][Effective Go]]
 - [[https://www.youtube.com/watch?v=PAAkCSZUG1c][Go Proverbs]]
+- [[http://peter.bourgon.org/go-best-practices-2016/][Go best practices, six years in]]
 - [[https://www.youtube.com/watch?v=29LLRKIL_TI][7 common mistakes in Go and when to avoid them]]
-
-* Criticism
-
 - [[https://github.com/ksimka/go-is-not-good][ksimka/go-is-not-good]]
 - [[https://www.youtube.com/watch?v=gHCtEjzZ-rY][A Look at the Criticism of Go]]
+
+* Kudos
+
+I'd like to thank [[http://peter.bourgon.org/][Peter Bourgon]] for giving me permission to
+re-use parts of his talk on [[https://speakerdeck.com/peterbourgon/go-plus-microservices-equals-go-kit][Go + microservices = Go kit]].
+
+Further, kudos go out to these wonderful Gophers who keep inspiring and motivating me:
+
+- [[https://twitter.com/bketelsen][Brian Ketelsen]]
+- [[https://twitter.com/jessfraz][Jessie Frazelle]]
+- [[https://twitter.com/davecheney][Dave Cheney]]
+- [[https://twitter.com/francesc][Francesc Campoy]]
