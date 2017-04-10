@@ -147,12 +147,21 @@ _Note_: examples that may only work in local mode are marked with *
 
 .play -numbers snippets/s04/main.go /BEGINC/,/ENDC/
 
+* Functions
+
+.code -numbers snippets/s05/main.go /BEGIND/,/ENDD/
+.play -numbers snippets/s05/main.go /BEGINC/,/ENDC/
+
+* Methods
+
+.code -numbers snippets/s06/main.go /BEGIND/,/ENDD/
+.play -numbers snippets/s06/main.go /BEGINC/,/ENDC/
 
 
 * Other
 
-- Functions and methods
 - Error handling
+- Interfaces
 - Reading and writing files
 - HTTP service/JSON
 - Concurrency
