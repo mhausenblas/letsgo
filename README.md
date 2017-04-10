@@ -5,6 +5,14 @@
 Local:
 
 ```bash
+$ go get golang.org/x/net
+$ go get golang.org/x/tools
+$ go install golang.org/x/tools/cmd/present
+```
+
+Once the present tool is installed, you can use it like to:
+
+```bash
 $ present -play -notes
 ```
 

@@ -164,11 +164,10 @@ _Note_: examples that may only work in local mode are marked with *
 
 * Interfaces
 
-
+.play -numbers snippets/s08/main.go /BEGIN/,/END/
 
 * Other
 
-- Interfaces
 - Reading and writing files
 - HTTP service/JSON
 - Concurrency
@@ -224,6 +223,7 @@ More via [[https://github.com/avelino/awesome-go][awesome-go]] …
 
 * Case studies
 
+- [[https://github.com/mhausenblas/burry.sh][burry.sh]]
 - [[https://github.com/containerd/containerd][containerd]]
 - [[https://github.com/coreos/etcd][etcd]]
 - [[https://github.com/hashicorp/consul][Consul]]
